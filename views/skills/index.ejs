@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
     <title>Dev Skills</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Skills</h1>
     <ul>
-        <% skills.forEach((e) => { %>
-            <li>
-                <a href="/skills/<%= e.id %>"><%= e.skill %></a>
-                - Competency: <%= e.level %>
-            </li>
-        <% }); %>
+      <% skills.forEach((e) => { %>
+      <li>
+        <a href="/skills/<%= e.id %>"><%= e.skill %></a>
+        - Competency: <%= e.level %>
+      </li>
+      <% }); %> 
     </ul>
-</body>
+    <a href="/skills/new">Add Skill</a>
+  </body>
 </html>
